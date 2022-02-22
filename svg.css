@@ -1,0 +1,260 @@
+html, body , svg, polyline{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#top-svg {
+    background: url("../images/svg.jpg") no-repeat;
+    background-size: cover;
+}
+
+.top:hover {
+    opacity: 0;
+    transition: 1s;
+}
+
+.top {
+    transition: 1s;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.open-home {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #3498DB;
+    color: white;
+    border: none;
+    animation: openHomeButton 1s linear infinite;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.open-home:hover {
+    background-color: #21618C;
+}
+
+.open-home:focus {
+    outline: none;
+}
+
+@keyframes openHomeButton {
+    0% {-webkit-box-shadow: 0px 0px 12px 5px #85C1E9;
+        -moz-box-shadow: 0px 0px 12px 5px #85C1E9;
+        box-shadow: 0px 0px 12px 5px #85C1E9;}
+        25% {-webkit-box-shadow: 0px 0px 12px 8px #85C1E9;
+            -moz-box-shadow: 0px 0px 12px 8px #85C1E9;
+            box-shadow: 0px 0px 12px 8px #85C1E9;}
+            50% {-webkit-box-shadow: 0px 0px 12px 10px #85C1E9;
+                -moz-box-shadow: 0px 0px 12px 10px #85C1E9;
+                box-shadow: 0px 0px 12px 10px #85C1E9;}
+                75% {-webkit-box-shadow: 0px 0px 12px 8px #85C1E9;
+                    -moz-box-shadow: 0px 0px 12px 8px #85C1E9;
+                    box-shadow: 0px 0px 12px 8px #85C1E9;}
+                    100% {-webkit-box-shadow: 0px 0px 12px 5px #85C1E9;
+                        -moz-box-shadow: 0px 0px 12px 5px #85C1E9;
+                        box-shadow: 0px 0px 12px 5px #85C1E9;}
+}
+
+
+
+
+/* back svg */
+
+#background1{
+    cursor: pointer;
+}
+
+.color01{
+    fill: #229954;
+}
+.color02{
+    fill: #2E86C1;
+}
+.color03{
+    fill: #B03A2E;
+}
+.color04{
+    fill: #D4AC0D;
+}
+
+.color1  {
+    animation: color1 2s linear infinite;
+}
+
+@keyframes color1 {
+    0%{fill: #52BE80;}
+    10%{fill: #27AE60;}
+    20%{fill: #229954;}
+    30%{fill: #1E8449;}
+    40%{fill: #196F3D;}
+    50%{fill: #1E8449;}
+    65%{fill: #229954;}
+    85%{fill: #27AE60;}
+    100%{fill: #52BE80;}
+}
+
+.color2  {
+    animation: color2 1s linear infinite;
+}
+
+@keyframes color2 {
+    0%{fill: #5DADE2;}
+    10%{fill: #3498DB;}
+    20%{fill: #2E86C1;}
+    30%{fill: #2874A6;}
+    40%{fill: #21618C;}
+    50%{fill: #2874A6;}
+    65%{fill: #2E86C1;}
+    85%{fill: #3498DB;}
+    100%{fill: #5DADE2;}
+}
+
+.color3  {
+    animation: color3 3s linear infinite;
+}
+
+@keyframes color3 {
+    0%{fill: #EC7063;}
+    10%{fill: #E74C3C;}
+    20%{fill: #CB4335;}
+    30%{fill: #B03A2E;}
+    40%{fill: #943126;}
+    50%{fill: #B03A2E;}
+    65%{fill: #CB4335;}
+    85%{fill: #E74C3C;}
+    100%{fill: #EC7063;}
+}
+
+.color4  {
+    animation: color4 3s linear infinite;
+}
+
+@keyframes color4 {
+    0%{fill: #F4D03F;}
+    10%{fill: #F1C40F;}
+    20%{fill: #D4AC0D;}
+    30%{fill: #B7950B;}
+    40%{fill: #9A7D0A;}
+    50%{fill: #B7950B;}
+    65%{fill: #D4AC0D;}
+    85%{fill: #F1C40F;}
+    100%{fill: #F4D03F;}
+}
+
+
+
+
+
+
+/* menu */
+#open-menu {
+    color: white;
+    font-weight: bold;
+    width: 40px;
+    position: fixed;
+    z-index: 10;
+    top: 30px;
+    left: 30px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  #open-menu:hover {
+    left: 0;
+    width: 100px;
+    transition: 1s;
+  }
+  
+  #open-menu hr {
+    height: 2px;
+    background-color: white;
+    transition: 1s;
+  }
+  
+  #open-menu:hover hr {
+    background-color: #239b56;
+    border-color: #239b56;
+    transition: 1s;
+  }
+  
+  .open-menu-hover {
+    transition: 1s;
+    left: 0px;
+    width: 100px;
+  }
+  
+  .close-menu {
+    position: absolute;
+    top: 15px;
+    right: 30px;
+    text-decoration: none;
+    font-size: 40px;
+    color: white;
+  }
+  
+  .close-menu:hover {
+    color: red;
+    transition: 0.5s;
+  }
+  
+  .menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    background-color: #1c2833;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+  }
+  
+  .menu-links {
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    color: #d0d3d4;
+    display: block;
+    position: relative;
+    transition: 2s;
+  }
+  
+  .menu-links:hover {
+    color: #239b56;
+    transition: 1s;
+  }
+  
+  .menu-links::after {
+    bottom: 0;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    background-color: #d0d3d4;
+    transition: 1s;
+    width: 0;
+  }
+  
+  .menu-links:hover::after {
+    width: 100%;
+    background-color: #239b56;
+  }
+  
+  .menu .closeButton {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 50px;
+    margin-left: 50px;
+  }
